@@ -16,6 +16,11 @@
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Core JS -->
+        <script src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -39,7 +44,9 @@
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/team.png" alt="..." /></div>
+                <div class="col-lg-7">
+                    <a href="https://www.outsystems.com/ai/">
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="assets/team.png" alt="..." /></a></div>
                 <div class="col-lg-5">
                     <h1 class="font-weight-light">AI Reading Goup</h1>
                     <p><b>Every Friday 14:00-15:00 UTC+1</b></p>
@@ -55,21 +62,39 @@
                 </div>
             </div>
             <!-- Call to Action-->
+            <div class="card-call-action text-dark bs-danger  my-5 py-4-action text-center">
+                <div class="card-body-action">
+                    <div class="footer_col1_big">
+                        <p>
+                            Join the AI Reading Group Army to present something!
+                        </p>
+                        <p>
+                            <a class="btn-outline-danger btn btn-sm"
+                               href="mailto:rd.ai.research@outsystems.com">
+                                    Present a Paper
+                                </a>
+                        </p>
+                    </div>
+                    <div class="footer_col2_small">
+                        <img class="img-action" src="assets/neo.png" alt="" loading="lazy" style="float: left;">
+                    </div>
+                </div>
+            </div>
+            <!-- Info card -->
+
             <div class="card text-white bg-secondary my-5 py-4 text-center">
                 <div class="card-body">
-                    <p class="text-white m-0"> We are a research group from <a href="https://www.outsystems.com/ai/" style="color: black">OutSystems AI</a> that gathers every friday to discuss one research paper in the area of AI.
+                    <p class="text-white m-0"> We are a research group that gathers every friday to discuss one research paper in the area of AI.
                     </p>
                     <p>
                         We are interested in any kind of AI applied to any kind of data (text, images, graphs, video, tabular, you name it!).
-                    </p>
-                    <p>
-                        Join us on Fridays or/and contact us to present something!
                     </p>
                     <p>
                         Check our previous Reading Groups below!
                     </p>
                 </div>
             </div>
+            <!-- <a href="https://www.outsystems.com/ai/" style="color: black">OutSystems AI</a> -->
             <!-- Content Row-->
             <div class="row gx-4 gx-lg-5">
 
@@ -78,7 +103,7 @@
                 <!-- New Card-->
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
-                        <div class="card-body">
+                        <div class="card-body text">
                             <h2 class="card-title">LayoutGMN</h2>
                             <p class="card-text">
                                 <b>Paper:</b> <a href="https://arxiv.org/abs/2012.06547" style="color: darkcyan"> LayoutGMN: Neural Graph Matching for Structural Layout Similarity </a> <br> <br>
